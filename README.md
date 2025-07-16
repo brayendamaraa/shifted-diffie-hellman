@@ -1,2 +1,4 @@
 # shifted-diffie-hellman
-Key exchange protocol based on shifted discrete logarithm problem implementation.
+Key exchange protocol based on shifted-DLP implementation.
+
+This is an implementation of Diffie-Hellman like key exchange protocol based on shifted-DLP. Shifted-DLP is a variant of the Discrete Logarithm Problem (DLP), where here we use a semigroup instead of a group as platform and instead of finding a that satisfy the equation g^a = h, in shifted-DLP we are trying to find a that satrify the equation yg^a = h where we can call y as the shifting element. This variant is harder to solve than the classical DLP even in quantum computer. Classical DLP is proved to be efficiently solved in polynomial time in quantum computer by using Shor's algorithm, while the best known algorithm to solve shifted-DLP is Kuperberg's Algorithm that runs in sub-exponential time. This shows that shifted-DLP is quantum-resistant and has a potential as security assumption in protocol that involves DLP.
